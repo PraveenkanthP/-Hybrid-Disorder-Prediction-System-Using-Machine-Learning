@@ -1,37 +1,27 @@
-# -Hybrid-Disorder-Prediction-System-Using-Machine-Learning
-Built models using supervised learning algorithms such as SVM, Gradient Boosting, and XG-Boost. Conducted data prepossessing, feature selection, and hyper parameter tuning for optimized predictions.
 # Hybrid Disorder Prediction System Using Machine Learning
 
-This project implements a machine learning system to predict multiple diseases including Diabetes, Kidney, and Heart disease using supervised learning algorithms like SVM, XGBoost, and Gradient Boosting.
+## Project Overview
+This project implements a hybrid machine learning system to predict disorders using supervised algorithms such as Support Vector Machine (SVM), Gradient Boosting, and XGBoost. It includes data preprocessing, model training, evaluation, and hyperparameter tuning for optimized predictions.
 
----
+## Setup
+1. Clone the repo.
+2. Place your dataset as `data/disorder_data.csv`.
+3. Create a virtual environment and install dependencies:
 
-## Tech Stack
-- Python (NumPy, Pandas, Scikit-learn)
-- Machine Learning: SVM, XGBoost, Gradient Boosting
-- Data preprocessing, feature selection, hyperparameter tuning
+```bash
+python -m venv env
+source env/bin/activate  # On Windows use `env\Scripts\activate`
+pip install -r requirements.txt
+```
 
----
+## Usage
+Run the pipeline with:
+```bash
+python main.py
+```
 
-## Features
-- Clean and preprocess data for model training
-- Train multiple classification models
-- Compare model performance (Accuracy, Precision, Recall, F1-Score)
-- Predict disease status based on input features
-
----
-
-## Results
-- Best accuracy achieved: **92%** (XGBoost)
-- Feature engineering and hyperparameter tuning significantly improved predictions
-
----
-
-## Getting Started
-
-### Prerequisites
-
-- Python 3.8+
-- Install dependencies:
-  ```bash
-  pip install -r requirements.txt
+## Project Structure
+- `data/` - Dataset folder
+- `src/` - Source code for preprocessing, training, and evaluation
+- `notebooks/` - Exploratory Data Analysis (EDA)
+- `main.py` - Entry point to run the project
